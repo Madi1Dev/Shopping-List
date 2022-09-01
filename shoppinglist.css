@@ -1,0 +1,594 @@
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }  
+ 
+::-webkit-scrollbar-track {
+    background: white;
+}
+  
+
+::-webkit-scrollbar-thumb {
+    background: #FF69B4;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://img.freepik.com/free-vector/peach-background-vector-cute-desktop-wallpaper_53876-136871.jpg?w=2000);
+    backdrop-filter: blur(0.5px);
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 33.5vw;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 4px 2px 2px;
+    
+}
+
+.welcome {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+    text-align: justify;
+    padding: 0px 15px 15px 15px;
+    width: 33.5vw;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #FFC0CB;
+    color: black;
+    
+}
+
+header > hr {
+    width: 15rem;
+    height: 2px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: -5px;
+}
+
+.connecting_lists {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+    height: 40px;
+    width: auto;
+    background: rgb(218,221,152);
+    background: linear-gradient(90deg, rgba(218,221,152,1) 5%, rgba(255,192,203,1) 15%, rgba(255,192,203,1) 85%, rgba(255,160,137,1) 95%);
+}
+
+.shopping_list_section {
+    background-color: #FFC0CB;
+    width: 33.5vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0px 0px 20px 20px;
+    
+}
+
+.shopping_box {
+    display: flex;
+    justify-content: top;
+    flex-direction: column;
+    align-items: center;
+    width: 40rem;
+    height: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.shopping_button {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    height: auto;
+    margin-top: 4rem;
+}
+
+.add_product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #eec0c8;
+    border-radius: 0px 0px 10px 0px;
+    transition: 0.2s ease-in-out;
+    border: none;
+    box-shadow: 0px 1px 5px;
+}
+
+.add_product:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.label_product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #eec0c8;
+    border-radius: 0px 0px 0px 10px;
+    box-shadow: 0px 1px 5px;
+}
+
+
+.product {
+    width: 28.2rem;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: none;
+    box-shadow: 1px 1px 3px;
+    
+} 
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    height: 3rem;
+    width: 40rem;
+    font-size: 25px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.div1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    left: 3rem;
+    height: auto;
+    width: auto;
+    font-size: 25px;
+    color: black;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+    transition: 0.2s;
+    box-shadow: 1px 2px 5px;
+    
+}
+
+.div1:hover {
+    transform: scale(1.05);
+}
+
+.div2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: auto;
+    width: auto;
+    font-size: 25px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    color: black;
+    margin: 5px;
+}
+
+.exitButton {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -1px;
+    right: -1px;
+    text-align: justify;
+}
+
+.exitButton:hover {
+    cursor: pointer;
+    
+}
+
+.delete_button {
+    justify-content: flex-end;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    height: 30px;
+    width: 100px;
+    transition: 0.1s ease-in-out;
+    border: none;
+    background-color: #FBCEB1;
+    box-shadow: 0px 2px 2px;
+}
+
+.add_one_more_button {
+    justify-content: flex-end;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    transition: 0.1s ease-in-out;
+    border: none;
+    background-color: #FBCEB1;
+    box-shadow: 0px 2px 2px;
+}
+
+.remove_one_button {
+    justify-content: flex-end;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    border-radius: 0px 10px 10px 0px;
+    transition: 0.1s ease-in-out;
+    border: none;
+    background-color: #FBCEB1;
+    box-shadow: 0px 2px 2px;
+}
+
+.add_to_list_button {
+    justify-content: flex-end;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    height: 30px;
+    width: 150px;
+    border-radius: 10px 0px 0px 10px;
+    border: none;
+    transition: 0.1s ease-in-out;
+    background-color: #FBCEB1;
+    box-shadow: 0px 2px 2px;
+}
+
+.delete_button:hover,
+.remove_one_button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: red;
+}
+
+.add_one_more_button:hover,
+.add_to_list_button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: greenyellow;
+}
+
+.counter {
+    position: absolute;
+    z-index: 10;
+    right: 65vw;
+    color: black;
+    transition: 0.2s;
+}
+
+.opacity {
+    opacity: 0;
+    transition: 0.2s;
+}
+
+/* SECOND SECTION */
+
+
+
+
+
+/* healthy list */
+
+.healthy_list {
+    display: flex;
+    position: absolute;
+    left: 18.3vw;
+    top: 5.2vh;
+    border-radius: 0px 0px 0px 10px;
+    flex-direction: column;
+    background-color: #DADD98;
+    width: 18rem;
+    height: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: -2px 3px 2px;
+}
+
+.healthy_list h2 {
+    background-color: #DADD98;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    height: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 10px 0px 0px 0px;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.healthy_label {
+    display: flex;
+    width: auto;
+    height: 3rem;
+    font-size: 23px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 2px;
+    margin-left: 2px;
+    padding: 5px;
+    background-color: none;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 1px 2px;
+    transition: 0.2s;
+}
+
+.healthy_foods_array {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: auto;
+    width: 18rem;
+}
+
+.prompt_Healthy_Button_Add_To_List {
+    background: none;
+    border: none;
+    width: 7rem;
+    height: 3rem;
+    border-radius: 25px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: 0.2s;
+
+}
+
+.prompt_Healthy_Button_Remove_From_Array {
+    background: none;
+    border: none;
+    transition: 0.2s;
+    width: 7rem;
+    height: 3rem;
+    border-radius: 25px;
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.text_Inside_Healthy_Prompt_Box {
+    font-size: 18px;
+    margin: 5px;
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.promptHealthyButton {
+    width: 7rem;
+    height: 3rem;
+    border-radius: 25px;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+    transition: 0.1s;
+    background: none;
+}
+
+
+/* treats list */
+
+.treats_list {
+    display: flex;
+    position: absolute;
+    right: 18.3vw;
+    top: 5.2vh;
+    border-radius: 0px 0px 10px 0px;
+    flex-direction: column;
+    background-color: #ffa089;
+    width: 18rem;
+    height: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 2px 3px 2px;
+}
+
+.treats_list h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #ffa089;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    justify-content: center;
+    position: relative;
+    font-size: 25px;
+    border-radius: 0px 10px 0px 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.treats_label {
+    display: flex;
+    width: auto;
+    height: 3rem;
+    font-size: 23px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 2px;
+    margin-left: 2px;
+    padding: 5px;
+    background-color: none;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 1px 2px;
+    transition: 0.2s;
+}
+
+.treats_array {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: auto;
+    width: 18rem;
+}
+
+.prompt_Treats_Button_Add_To_List {
+    background: none;
+    transition: 0.2s;
+    border: none;
+    width: 7rem;
+    height: 3rem;
+    border-radius: 25px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.prompt_Treats_Button_Remove_From_Array {
+    background: none;
+    transition: 0.2s;
+    border: none;
+    width: 7rem;
+    height: 3rem;
+    border-radius: 25px;
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.text_Inside_Treats_Prompt_Box {
+    font-size: 18px;
+    margin: 5px;
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.promptUnhealthyButton {
+    
+    width: 7rem;
+    height: 3rem;
+    border-radius: 25px;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+    background: none;
+    transition: 0.2s;
+
+}
+
+.treats_label:hover,
+.healthy_label:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/* prompt box */
+.prompt_box {
+    background-color: #fdd5b1;
+    width: 16rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 10;
+    position: absolute;
+    border-radius: 15px;
+    border: black solid 0.5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.text_inside_prompt_box {
+    font-size: 18px;
+    margin-bottom: -5px;
+    margin-top: -5px;
+    padding: 5px;
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+.prompt_Healthy_Button_Add_To_List:hover {
+    background-color: #DADD98;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.prompt_Healthy_Button_Remove_From_Array:hover {
+    background-color: #ffa089;
+    transform: scale(1.05);
+    cursor: pointer;
+} 
+
+.prompt_Treats_Button_Add_To_List:hover {
+    background-color: #ffa089;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.prompt_Treats_Button_Remove_From_Array:hover {
+    background-color: #DADD98;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.promptHealthyButton:hover {
+    background-color: #DADD98;
+    transform: scale(1.05);
+    cursor: pointer;
+
+}
+
+.promptUnhealthyButton:hover {
+    background-color: #ffa089;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+/* universal class */
+.hide {
+    display: none;
+}
+
+
+.change_Healthy_Colour {
+    background-color: #DADD98;
+    box-shadow: 1px 2px 5px;
+}
+
+.change_Treats_Colour {
+    background-color: #ffa089;
+    box-shadow: 1px 2px 5px;
+}
+
+
+
+
