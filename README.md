@@ -21,18 +21,9 @@ This app allows you to do the following things:
 
 4. The items assume the colour of the list to which they belong, and the colour is removed if the
 item no longer belongs to either list.
-- Presently, there is an unresolved issue whereby an item that was removed from the shopping list but was 
-added back from either Healthy Foods or Treats! doesn't change colour to blank if its corresponding label was
-removed from the Healthy Foods or Treats lists. 
-- This happens because the div1 element that is created within the on-click event promptHealthyButtonAddToList
-at line 232 and promptTreatsButtonAddToList at line 446 aren't the same as the div1 element created prior to
-them, which is available to the promptHealthyButtonRemoveFromArray (395) and promptTreatsButtonRemoveFromArray
-(613).
-- This is an issue I aim to return to alongside other design changes I have in mind which may involve a large-scale overhaul 
-of the app. 
 
-These involve:
-==== FUTURE CHANGES
+
+==== FUTURE FEATURES MAY INVOLVE:
 1. Phone compatibility with media queries.
 2. Spellcheck for entered items.
 3. Code efficiency. Better function arrangements and callbacks.
