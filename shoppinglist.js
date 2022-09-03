@@ -311,6 +311,7 @@ function addProduct(input) {
                   healthyFoods.unshift(div1.innerText);
                   forHealthyIndividual();
                   promptBox.remove();
+                  div1.classList.add("change_Healthy_Colour");
                 }
               });
 
@@ -331,6 +332,7 @@ function addProduct(input) {
                   treats.unshift(div1.innerText);
                   forTreatsIndividual();
                   promptBox.remove();
+                  div1.classList.add("change_Treats_Colour");
                 }
               });
 
@@ -534,6 +536,7 @@ function addProduct(input) {
                   healthyFoods.unshift(div1.innerText);
                   forHealthyIndividual();
                   promptBox.remove();
+                  div1.classList.add("change_Healthy_Colour");
                 }
               });
 
