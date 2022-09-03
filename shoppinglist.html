@@ -1,73 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="shoppinglist.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="shoppinglist.css" rel="stylesheet" />
     <script defer src="shoppinglist.js"></script>
     <title>shopping list</title>
-</head>
-<body>
-
-    <div id="healthy_list" class="healthy_list">  
-        <h2>Healthy Foods</h2>
-        <div id="healthy_foods_array" class="healthy_foods_array"></div>
+  </head>
+  <body>
+    <div id="healthy_list" class="healthy_list">
+      <h2>Healthy Foods</h2>
+      <div id="healthy_foods_array" class="healthy_foods_array"></div>
     </div>
 
     <main>
+      <header class="welcome" id="welcome">
+        <div class="connecting_lists">
+          <header>
+            <h1>Shopping List</h1>
+            <hr />
+          </header>
+        </div>
+        <h2>
+          <br />
+          <br />
+          Time to organise your shopping cart! Here are the instructions:
+          <br /><br />
+          1. Enter the items you'd like to buy on your next trip to the shops.
+          <br /><br />
+          2. Click the "Add to list" button to add your favourite items to
+          either list for future purchases. <br /><br />
+          3. Basket list items change colour according to their corresponding
+          lists. Feel free to click around and see them change! <br />
+        </h2>
+        <hr />
+      </header>
 
-        <header class="welcome" id="welcome">
-            <div class="connecting_lists">
-                <header>
-                    <h1>Shopping List</h1>
-                    <hr>
-                </header>
-            </div>
-            <h2>
-                <br>
-                <br>
-                Time to organise your shopping cart! Here are the instructions: <br><br>
-                1. Enter the items you'd like to buy on your next trip to the shops. <br><br>
-                2. Click the "Add to list" button to add your favourite items to either list for future purchases. <br><br>
-                3. Once the item is on either list, you can quickly add it back to the shopping list the next time around. <br>
-            </h2>
-            <hr>
-        </header>
+      <section id="shopping_list_section" class="shopping_list_section">
+        <div id="shopping_box" class="shopping_box"></div>
 
-        <section id="shopping_list_section" class="shopping_list_section">
-
-            
-
-            <div id="shopping_box" class="shopping_box">
-            </div>
-
-            <div id="shopping_button" class="shopping_button">
-
-                <label for="product" class="label_product">Product:</label>
-                <input type="text" id="product" name="product" class="product" pattern="([^\s][A-zÀ-ž\s]+)">
-                <button type="button" id="add_product" name="add_product" class="add_product">Add</button>
-                
-            </div>
-
-        </section>  
-
+        <div id="shopping_button" class="shopping_button">
+          <label for="product" class="label_product">Product:</label>
+          <input
+            type="text"
+            id="product"
+            name="product"
+            class="product"
+            pattern="([^\s][A-zÀ-ž\s]+)"
+          />
+          <button
+            type="button"
+            id="add_product"
+            name="add_product"
+            class="add_product"
+          >
+            Add
+          </button>
+        </div>
+      </section>
     </main>
 
     <div id="treats_list" class="treats_list">
-        <h2>Treats!</h2>
-        <div id="treats_array" class="treats_array"></div>
+      <h2>Treats!</h2>
+      <div id="treats_array" class="treats_array"></div>
     </div>
-
-</body>
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
